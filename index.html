@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech to Text</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+   
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <img src="1.png" class="mt-5 mb-3" alt="" srcset="" />
+        <h1 class="text-center m-2">Speech to Text</h1>
+      </div>
+      <div class="form-group mt-3 mb-5">
+        <textarea id="textbox" rows="9" class="form-control"></textarea>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 my-1">
+          <button id="start-btn" class="btn btn-block">
+            <i class="far fa-play-circle"></i>&nbsp; Start
+          </button>
+        </div>
+        <div class="col-sm-6 my-1">
+          <button id="stop-btn" class="btn btn-block">
+            <i class="far fa-stop-circle"></i> &nbsp;Stop
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 my-1">
+          <button
+            id="copy-btn"
+            class="btn btn-block"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="top"
+            data-content="Viaucibus."
+          >
+            <i class="far fa-copy"></i>
+            &nbsp;
+            <p id="copy-btnp">Copy</p>
+          </button>
+        </div>
+        <div class="col-sm-6 my-1">
+          <button id="clear-btn" class="btn btn-block">
+            <i class="fas fa-eraser"></i>&nbsp; Clear
+          </button>
+        </div>
+      </div>
+      <p class="text-center mt-3" id="instruction">Press the Start button</p>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</html>
